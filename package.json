@@ -10,7 +10,11 @@
   },
   "dependencies": {
     "core-js": "^3.9.1",
-    "nuxt": "^2.15.3"
+    "gsap": "^3.6.1",
+    "nuxt": "^2.15.3",
+    "three": "^0.128.0",
+    "three-orbit-controls": "^82.1.0",
+    "webpack-glsl-loader": "^1.0.1"
   },
   "devDependencies": {
     "fibers": "^5.0.0",

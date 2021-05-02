@@ -50,4 +50,31 @@ body {
     text-align: center;
   }
 }
+
+//? TRANSITION
+.flip-enter-active {
+  transition: all 0.3s ease-in-out;
+}
+
+.flip-leave-active {
+  transition: all 0.3s ease-in-out;
+}
+
+.flip-enter {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+.flip-enter-to {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.flip-leave {
+  transform: translateY(0);
+  opacity: 1;
+}
+.flip-leave-to {
+  transform: translateY(100%);
+  opacity: 0;
+}
 </style>

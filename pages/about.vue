@@ -7,7 +7,7 @@
 <script>
 export default {
   transition() {
-    return "slide";
+    return "flip";
   }
 };
 </script>
