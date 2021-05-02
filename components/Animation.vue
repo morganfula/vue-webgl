@@ -19,8 +19,15 @@ export default {
     };
   },
   computed: mapState(["page"]),
+  watch: {
+    page: function(newValue, oldValue) {
+      let tl = new TimelineMax({
+        onComplete: function() {}
+      });
+    }
+  },
   mounted() {
-    var camera, controls, scene, renderer, geometry, material;
+    let camera, controls, scene, renderer, geometry, material;
 
     let vm = this;
 
@@ -33,7 +40,8 @@ export default {
       material = new THREE.MeshBasicMaterial({ color: 0xff0000 });
       material.wireframe = true;
 
-      geometry = new THREE.BoxGeometry(1, 1, 1);
+      geometry = new THREE.BoxGeometry();
+
       const mesh = new THREE.Mesh(geometry, material);
       scene.add(mesh);
 

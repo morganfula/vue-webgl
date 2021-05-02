@@ -78,7 +78,7 @@ export default {
   opacity: 0;
 }
 .letter {
-  // opacity: 0;
+  opacity: 0;
   display: inline-block;
   position: relative;
 }
