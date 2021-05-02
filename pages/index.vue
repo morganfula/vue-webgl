@@ -1,30 +1,13 @@
 <template>
   <section class="container">
-    <h1>HOMEPAGE</h1>
+    <h1 class="js-split">Homepage</h1>
   </section>
 </template>
 
 <script>
-import { TimelineMax } from "gsap";
+import LettersAnimation from "~/mixins/LettersAnimation";
 
 export default {
-  transition: {
-    name: "test",
-    mode: "out-in",
-    css: false,
-    enter: function(el, done) {
-      let tl = new TimelineMax();
-      tl.set(el, { y: 100, opacity: 0 });
-      tl.to(el, 0.3, { y: 0, opacity: 1 });
-      done();
-    },
-    leave: function(el, done) {
-      let tl = new TimelineMax();
-      tl.to(el, 0.3, { y: 100, opacity: 0 });
-      done();
-    }
-  }
+  mixins: [LettersAnimation]
 };
 </script>
-
-<style lang="scss"></style>

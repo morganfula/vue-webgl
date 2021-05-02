@@ -1,22 +1,18 @@
 <template>
-  <section class="navigation">
+  <nav class="navigation">
     <nuxt-link to="/">Homepage</nuxt-link>
     <nuxt-link to="/about">About</nuxt-link>
-  </section>
+  </nav>
 </template>
 
-<script>
-export default {};
-</script>
-
-<style lang="scss" scoped>
+<style lang="scss">
 .navigation {
   font-size: 20px;
   padding: 40px;
   text-align: right;
 
   a {
-    padding: 10px 20px;
+    padding: 10px;
     color: #fff;
     text-decoration: none;
     border: 1px solid #000;

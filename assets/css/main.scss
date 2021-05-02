@@ -1,0 +1,55 @@
+@import "./variables";
+
+// Breakpoints
+$mobile: 576px !default; // used for max-width only
+
+// mobile-first breakpoints (min-width: $x)
+$mobile-large: 577px !default;
+$tablet: 768px !default;
+$desktop: 1024px !default;
+$widescreen: 1200px !default;
+$fullhd: 1392px !default;
+
+body {
+  box-sizing: border-box;
+  -ms-overflow-style: none; /* IE 11 */
+  scrollbar-width: none; /* Firefox 64 */
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+html {
+  overflow: scroll;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+html,
+body {
+  font-family: $family-primary;
+  font-size: $font-size;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  transition: all 1s ease-in-out;
+
+  background: $black;
+  // font-size: responsive 14px 21px; /* min-size, max-size */
+  // font-range: 480px 1280px; /* viewport widths between which font-size is fluid */
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
